@@ -6,6 +6,8 @@ Vehicle Info app for storing and organising vehicle information for a fleet owne
 
 In the project directory, please run:
 
+### `npm install`
+
 ### `npm start`
 
 Runs the app in the development mode.\

@@ -68,13 +68,12 @@ export const ViewVehicle = ()=> {
                 <Grid item xs={12}>
                 <Paper className={classes.paper}>{VEHICLE_LABELS.fuel}: {data.fuelType}</Paper>
                 </Grid>
-
+                <Grid item xs={12}>
+                <Paper className={classes.paper}>{VEHICLE_LABELS.status}: {data.status}</Paper>
+                </Grid>
                 <Grid item xs={12}>
                 <Paper className={classes.paper}>{VEHICLE_LABELS.equipments}: {data.equipments}</Paper>
                 </Grid>
-                {/*<Grid item xs={12}>
-                <Paper className={classes.paper}>Department: {data.department}</Paper>
-                </Grid>*/}
             </Grid>
         </div>
     </Container>
