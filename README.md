@@ -54,7 +54,19 @@ Builds the app for production to the `build` folder.
     -> Equipments.json is allowed to upload only after 'Vehicles.json' was uploaded to the system.
 
 ## Demo Screens
-    ![alt text](https://github.com/sujithmu/Vehicle-Info/src/assets/screenshots/home_screen.png?raw=true)
+    Home (https://github.com/sujithmu/Vehicle-Info/blob/main/src/assets/screenshots/home_screen.png?raw=true)
+    
+    Add New Vehicle (https://github.com/sujithmu/Vehicle-Info/blob/main/src/assets/screenshots/addvehicle_screen.png?raw=true)
+
+    Upload Vehicle (https://github.com/sujithmu/Vehicle-Info/blob/main/src/assets/screenshots/vehicles_uploaded_screen.png?raw=true)
+
+    Upload Equipements (https://github.com/sujithmu/Vehicle-Info/blob/main/src/assets/screenshots/equipments_uploaded_screen.png?raw=true)
+
+    Search (https://github.com/sujithmu/Vehicle-Info/blob/main/src/assets/screenshots/vehicle_search.png?raw=true)
+
+    Edit (https://github.com/sujithmu/Vehicle-Info/blob/main/src/assets/screenshots/vehicle_edit.png?raw=true)
+
+    View (https://github.com/sujithmu/Vehicle-Info/blob/main/src/assets/screenshots/vehicle_view.png?raw=true)
 
 ## Things that could have been done / not done
     -> 'Status', 'Fuel Type' field could be a 'Dropdown' instead of textfield.
