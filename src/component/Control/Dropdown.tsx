@@ -1,6 +1,5 @@
 import React from 'react'
 import { FormControl, InputLabel, Select as MuiSelect, MenuItem, FormHelperText } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
 
 interface IProps{
     options:any;
@@ -17,7 +16,7 @@ interface IProps{
 
 export const Dropdown=(props: IProps)=>{
     const { name, label, value,error=null, onChange, options,className,fullWidth } = props;
-    const errorMessage=error!=null&&error=="0"?"":error;
+    const errorMessage = error != null && error === "0" ? "" : error;
     return(
         <div>
                 <FormControl variant="outlined" className={className}   
