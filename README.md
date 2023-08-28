@@ -54,25 +54,25 @@ Builds the app for production to the `build` folder.
     -> Equipments.json is allowed to upload only after 'Vehicles.json' was uploaded to the system.
 
 ## Demo Screens
-    ![Home](https://github.com/sujithmu/Vehicle-Info/assets/41791057/ba944dcd-7a54-4b89-9ba5-2f1692a1f216)
+![Home](https://github.com/sujithmu/Vehicle-Info/assets/41791057/ba944dcd-7a54-4b89-9ba5-2f1692a1f216)
     
 
-    ![Add New Vehicle](https://github.com/sujithmu/Vehicle-Info/assets/41791057/77378c57-18c1-4a0d-9e38-7315b5079119)
+![Add New Vehicle](https://github.com/sujithmu/Vehicle-Info/assets/41791057/77378c57-18c1-4a0d-9e38-7315b5079119)
 
 
-    ![Upload Vehicle](https://github.com/sujithmu/Vehicle-Info/assets/41791057/b70c2f83-4872-41cc-bc31-edc84e9fe65e)
+![Upload Vehicle](https://github.com/sujithmu/Vehicle-Info/assets/41791057/b70c2f83-4872-41cc-bc31-edc84e9fe65e)
 
 
-    ![Upload Equipements](https://github.com/sujithmu/Vehicle-Info/assets/41791057/c9129a0f-072b-41de-82e9-585246458da8)
+![Upload Equipements](https://github.com/sujithmu/Vehicle-Info/assets/41791057/c9129a0f-072b-41de-82e9-585246458da8)
 
 
-    ![Search](https://github.com/sujithmu/Vehicle-Info/assets/41791057/7fd21614-e1bb-4e9b-a9d4-542e1fd62443)
+![Search](https://github.com/sujithmu/Vehicle-Info/assets/41791057/7fd21614-e1bb-4e9b-a9d4-542e1fd62443)
 
 
-    ![Edit](https://github.com/sujithmu/Vehicle-Info/assets/41791057/69d73bd0-aa55-4273-bada-0fe23c88522c)
+![Edit](https://github.com/sujithmu/Vehicle-Info/assets/41791057/69d73bd0-aa55-4273-bada-0fe23c88522c)
     
 
-    ![View](https://github.com/sujithmu/Vehicle-Info/assets/41791057/38a032db-65e1-4dc9-88af-579f250f48ce)
+![View](https://github.com/sujithmu/Vehicle-Info/assets/41791057/38a032db-65e1-4dc9-88af-579f250f48ce)
 
 ## Extended features
     -> 'Status', 'Fuel Type' field could be a 'Dropdown' instead of textfield.
