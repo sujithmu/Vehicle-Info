@@ -27,22 +27,4 @@ describe('VehicleForm', () => {
         const equipments = screen.getByTestId("equipmentsTid");
         expect(equipments).toBeInTheDocument();
     });
-
-    // test("Should submit the form with vehiclename, id, driver, status, fuel and equipments", async () => {
-    //     const onSubmit = jest.fn();
-    //     const vehicleId = screen.getByRole("Vehicle ID");
-    //     const vehicleName = screen.getByTestId("nameTid");
-    //     // const submitBtn = screen.getByText("submit");
-
-    //     expect(onSubmit).toHaveBeenCalledWith(vehicleId, vehicleName);
-    // });
 });
-
-
-
-// describe('VehicleForm', () => {
-//     it('Six input fields and a submit button exist', () => {
-//         const nameInput = screen.getByTestId("nameId");
-//         expect(nameInput).toBeInTheDocument();
-//     });
-// });

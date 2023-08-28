@@ -75,7 +75,7 @@ Edit:
 View:
 ![View](https://github.com/sujithmu/Vehicle-Info/assets/41791057/38a032db-65e1-4dc9-88af-579f250f48ce)
 
-## Extended features
+## Features that could be extended
     -> 'Status', 'Fuel Type' field could be a 'Dropdown' instead of textfield.
     -> Validate uploaded json files before loading to the grid.
     -> Columns 'sort' could be added.
