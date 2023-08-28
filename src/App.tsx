@@ -39,6 +39,10 @@ const useStyles = makeStyles({
   }
 })
 
+/**
+ * 
+ * @App Routes to the respective pages 
+ */
 function App() {
   const classes = useStyles();
 

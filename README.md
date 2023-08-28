@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# Vehicle Info App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Vehicle Info app for storing and organising vehicle information for a fleet owner.
 
-## Available Scripts
+## How to Run
 
-In the project directory, you can run:
+In the project directory, please run:
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Use Case I
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Application should display vehicles`
 
-### `npm run eject`
+### On load application should display list of vehicles already added.
+    -> Vehicle ID
+    -> Name
+    -> Equipments
+    -> Driver
+    -> Status
+    -> Fuel
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Vehicles can be added to the application in 2 ways.
+    -> Click Add 'New Vehicle'. Fill up the the form and submit.
+    -> Upload 'vehicles.json' and click 'Upload'.
+    -> Equipments can be uploaded to respctive vehicles from 'Equipments.json' file.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Use Case II
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `Vehicles should be easily configured by the owner`
+    -> Vehicles list launching screen includes 'Edit','View' and 'Delete' buttons.
+    -> Clicking 'Edit' routes the application to an 'record' editing screen. User can update the records apart  
+       from Vehicle ID, which is a 'protected' field.
+    -> Clicking 'View' button routes to form 'View' module where user can see the already added informations.
+    -> Clicking 'Delete' should delete that particular row.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Assumptions
+    -> As the vehicles list is longer there should be a way to filter the vehicles. Currently 'Vehicle Name' 
+       and 'Driver Name' are searchable.
+    -> Vehicles ID loaded from 'file' is string eg: 'V1'. Manually added vehicle id to be a number which  
+       increments automatically.
+    -> Vehicles.json once uploaded 'Shouldn't be allowed' to upload again.
+    -> Equipments.json is allowed to upload only after 'Vehicles.json' was uploaded to the system.
 
-## Learn More
+## Demo Screens
+    ![alt text](https://github.com/sujithmu/Vehicle-Info/src/assets/screenshots/home_screen.png?raw=true)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Things that could have been done / not done
+    -> 'Status', 'Fuel Type' field could be a 'Dropdown' instead of textfield.
+    -> Validate uploaded json files before loading to the grid.
+    -> Columns 'sort' could be added.
+    -> Validation to notify the user that equipements.json will be allowed to upload only when a valid Vehicles.
+       json is already uploaded.

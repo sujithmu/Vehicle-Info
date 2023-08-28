@@ -5,6 +5,12 @@ const KEYS = {
     vehicleFileUpload: 'vehicleFileUpload'
 }
 
+/**
+ * 
+ * @param data 
+ * @returns files uploaded / inserted flag
+ * vehicles records ar stored 'vehicles' localstorage
+ */
 export function insertVehicle(data: any) {
     let vehicles = getExistingVehicles(),
         fileUploaded = false;
@@ -31,6 +37,11 @@ export function insertVehicle(data: any) {
     return fileUploaded;
 }
 
+/**
+ * 
+ * @param data 
+ * Updates existing vehicle details
+ */
 export function updateVehicle(data: any) {
     let vehicles = getExistingVehicles();
     let recordIndex = vehicles.findIndex((x: any) => x.id === data.id);
@@ -38,6 +49,11 @@ export function updateVehicle(data: any) {
     localStorage.setItem(KEYS.vehicles, JSON.stringify(vehicles));
 }
 
+/**
+ * 
+ * @param data 
+ * To load equipment details to vehicles records
+ */
 export function updateEquipments(data: []) {
     let vehicles = getExistingVehicles();
     let equipmentName = "";
@@ -54,6 +70,12 @@ export function updateEquipments(data: []) {
     localStorage.setItem(KEYS.vehicles, JSON.stringify(vehicles));
 }
 
+/**
+ * 
+ * @param data 
+ * @param equipment 
+ * @returns the equipments from equipments.json
+ */
 export function filterEquipment(data: any, equipment: []) {
     for (let i = 0; i < data.length; i++) {
         if (data[i].id === equipment) {
@@ -62,6 +84,11 @@ export function filterEquipment(data: any, equipment: []) {
     }
 }
 
+/**
+ * 
+ * @param id 
+ * To delete selected vehicles details
+ */
 export function deleteVehicle(id: string | number) {
     let vehicles = getExistingVehicles();
     vehicles = vehicles.filter((x: any) => x.id !== id);
@@ -71,6 +98,11 @@ export function deleteVehicle(id: string | number) {
     }
 }
 
+/**
+ * 
+ * @returns 
+ * Autogenerate vehicle ID's
+ */
 export function generateVehicleId() {
     if (localStorage.getItem(KEYS.vehicleId) == null) {
         localStorage.setItem(KEYS.vehicleId, '0');
@@ -80,6 +112,10 @@ export function generateVehicleId() {
     return id;
 }
 
+/**
+ * 
+ * @returns selected vehicle details
+ */
 export function getExistingVehicles() {
     if (localStorage.getItem(KEYS.vehicles) == null) {
         localStorage.setItem(KEYS.vehicles, JSON.stringify([]))
@@ -88,6 +124,11 @@ export function getExistingVehicles() {
     return vehicles;
 }
 
+/**
+ * 
+ * @param jsonRec 
+ * @returns the list of vehicles from uploaded and manually added records
+ */
 export function getAllVehicles(jsonRec: any) {
     let existingVehicles = getExistingVehicles(),
         vehicles = JSON.parse(jsonRec || ''),
@@ -99,11 +140,21 @@ export function getAllVehicles(jsonRec: any) {
     return mergedRec;
 }
 
+/**
+ * 
+ * @param jsonRec 
+ * @returns 
+ */
 export function getAllEquipments(jsonRec: any) {
     let equipments = JSON.parse(jsonRec || '');
     return equipments;
 }
 
+/**
+ * 
+ * @param id 
+ * @returns get vehicles by id
+ */
 export function getVehicleById(id: string | number) {
     let vehicles = JSON.parse(localStorage.getItem(KEYS.vehicles) || ''),
         selectedRecord = vehicles.filter((val: any) => {
