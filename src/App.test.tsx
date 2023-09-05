@@ -3,11 +3,7 @@ import { TextBox } from './component/Control/TextBox';
 
 test('Should render a TextBox component', () => {
   const textBoxProps = {
-      name: '', id: '', type:'', value:'', label:'', onChange:'', error:''
+      name: '', id: '', type:'', value:'', label:'', onChange:Function, error:''
   }
   render(<TextBox {...textBoxProps} />);
 });
-
-
-
-

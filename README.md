@@ -13,9 +13,9 @@ In the project directory, please run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
+### `npm run test`
 
-Launches the test runner in the interactive watch mode.
+Open a new terminal from source folder and run 'npm run test'. Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 

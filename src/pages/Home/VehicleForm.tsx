@@ -149,7 +149,7 @@ export const VehicleForm = ()=> {
 
     return(
         <>
-            <Grid container justify="center" alignItems="center" direction="column" style={{minHeight:"100vh"}}>
+            <Grid container justifyContent="center" alignItems="center" direction="column" style={{minHeight:"100vh"}}>
                 {id != null && id !== undefined && parseInt(id) !== 0 ? <h1>Edit Vehicle</h1> : <h1>Add Vehicle</h1>}
             <form onSubmit={handleSubmit}>
                 <TextBox
