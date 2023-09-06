@@ -9,7 +9,9 @@ please run:
 
 ### `npm install`
 
-Installs all required dependencies. Below are some of the packages/dependencies intalled for the project
+Installs all required dependencies. 
+Below are some of the packages/dependencies intalled for the project
+
 	-> Material UI
 	-> Jest
 
