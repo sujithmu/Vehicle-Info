@@ -4,9 +4,14 @@ Vehicle Info app for storing and organising vehicle information for a fleet owne
 
 ## How to Run
 
-In the project directory, please run:
+In the project directory (`C:\Project_Folder\Vehicle-Info-main\Vehicle-Info-main`), 
+please run:
 
 ### `npm install`
+
+Installs all required dependencies. Below are some of the packages/dependencies intalled for the project
+	-> Material UI
+	-> Jest
 
 ### `npm start`
 
@@ -15,7 +20,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm run test`
 
-Open a new terminal from source folder and run 'npm run test'. Launches the test runner in the interactive watch mode.
+Open a terminal and change directory to root project folder. In our application it will be `C:\Project_Folder\Vehicle-Info-main\Vehicle-Info-main`
+`jest.config file` should be available in the root folder.
+Run 'npm run test'. It will launch the test runner in an interactive watch mode and run the test, and will display if the tests were `success or failed`.
 
 ### `npm run build`
 
@@ -83,3 +90,4 @@ View:
     -> Columns 'sort' could be added.
     -> Validation to notify the user that equipements.json will be allowed to upload only when a valid Vehicles.
        json is already uploaded.
+	-> Few more tests for the screens.
