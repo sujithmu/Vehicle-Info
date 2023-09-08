@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Vehicle-Info/static/css/main.624e7192.css",
+    "main.js": "/Vehicle-Info/static/js/main.b30c9fc7.js",
+    "static/js/787.5eb50649.chunk.js": "/Vehicle-Info/static/js/787.5eb50649.chunk.js",
+    "index.html": "/Vehicle-Info/index.html",
+    "main.624e7192.css.map": "/Vehicle-Info/static/css/main.624e7192.css.map",
+    "main.b30c9fc7.js.map": "/Vehicle-Info/static/js/main.b30c9fc7.js.map",
+    "787.5eb50649.chunk.js.map": "/Vehicle-Info/static/js/787.5eb50649.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.624e7192.css",
+    "static/js/main.b30c9fc7.js"
+  ]
+}
